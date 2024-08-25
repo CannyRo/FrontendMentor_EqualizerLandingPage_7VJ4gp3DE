@@ -9,25 +9,57 @@
   <title>Frontend Mentor | Equalizer landing page</title>
 </head>
 <body>
-
-  We make your music sound extraordinary.
-
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
-
-  Premium EQ
-
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
-
-  $4 / month
-
-  iOS Download
-  Android Download
-
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com
-
+  <header>
+    <img src="./assets/logo.svg" alt="Logo of Equalizer" class="logo">
+  </header>
+  <main>
+    <section class="hero__container">
+      <h1 class="hero__title">We make your music sound extraordinary.</h1>
+      <p class="hero__text">A system audio equalizer specifically designed for Android and iOS. Freely tune the 
+        way your music sounds with a professional grade parametric EQ & volume mixer. Control 
+        bass, mids, treble, gain control, reverb, and more!</p>
+    </section>
+    <section class="price__container">
+      <div class="price__container-illustration">
+        <img src="./assets/illustration-app.png" alt="Mockup of Equalizer App" class="app__mockup">
+      </div>
+      <div class="price__container-article">
+        <h2 class="price__container-title">Premium EQ</h2>
+        <p class="price__container-text">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
+          your listening experience to a whole new level and access all our incredible features!</p>
+        <p class="price__container-price"><span class="price__accent">$4</span> / month</p>
+        <div class="price__button-container">
+          <button type="button" class="price__button-ios">iOS Download</button>
+          <button type="button" class="price__button-android">Android Download</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__equalizer">
+      <img src="./assets/logo.svg" alt="Logo of Equalizer" class="logo">
+      <div class="footer__equalizer-container">
+        <div class="footer__equalizer-content">
+          <p>All rights reserved © Equalizer 2021</p>
+        <p> Have any problems? Contact us via social media or email us at <a href="mailto:equalizer@example.com">equalizer@example.com</a></p>
+        </div>
+        <div class="footer__equalizer-links">
+          <a href="#">
+            <img src="./assets/icon-facebook.svg" alt="Logo of Facebook">
+          </a>
+          <a href="#">
+            <img src="./assets/icon-instagram.svg" alt="Logo of Instagrram">
+          </a>
+          <a href="#">
+            <img src="./assets/icon-twitter.svg" alt="Logo of Twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__signature">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="https://cannyro.github.io/hire_mr_canny/en">WhatCannyDev</a>.</p>
+    </div>
+  </footer>
 </body>
 </html>
