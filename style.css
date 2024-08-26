@@ -187,13 +187,11 @@ body{
     background-color: var(--Cyan);
 }
 .hover-yellow:hover, .hover-yellow:focus, .hover-yellow:active{
-    /* color: var(--Slate); */
     background-color: var(--Yellow);
 }
 .hover-orange:hover, .hover-orange:focus, .hover-orange:active{
     color: var(--Orange);
 }
-
 @media (min-width: 768px){
     body{
         background-image: url('./assets/bg-main-tablet_fixed.png');
@@ -371,7 +369,6 @@ body{
     }
     .footer__equalizer{
         flex-direction: row;
-        /* align-items: start; */
         width: 100%;
         max-width: 1120px;
     }
@@ -380,7 +377,6 @@ body{
         margin-right: 128px;
     }
     .footer__equalizer-container{
-        /* display: flex;*/
         justify-content: space-between; 
         align-items: center;
         margin-top: 0;
