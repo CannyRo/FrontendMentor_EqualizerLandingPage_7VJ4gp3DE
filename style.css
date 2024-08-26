@@ -22,16 +22,21 @@ body{
 }
 .header{
     padding: 64px 20px;
-    /* background-image: url('./assets/bg-main-mobile-fixed.png');
-    background-repeat: no-repeat;
-    background-position: -25% 80%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.nav, .logo{
+.nav{
+    width: 100%;
+    max-width: 1120px;
+}
+.logo{
     margin-bottom: 64px;
     width: fit-content;
     height: 32px;
 }
 .hero__title{
+    margin-top: 0;
     margin-bottom: 40px;
     font-size: 40px;
     line-height: 40px;
@@ -178,8 +183,7 @@ body{
 }
 @media (min-width: 768px){
     body{
-        background-image: 
-            url('./assets/bg-main-tablet_fixed.png');
+        background-image: url('./assets/bg-main-tablet_fixed.png');
         background-position: 86% -50%;
     }
     .header{
@@ -188,16 +192,20 @@ body{
         background-repeat: no-repeat;
         background-position: top -40px right -52px;
     }
-    .nav{
+    .logo{
         margin-bottom: 128px;
     }
     .hero__title{
-        width: 416px;
+        padding-right: 264px;
+        width: 100%;
+        max-width: 928px;
         font-size: 64px;
         line-height: 64px;
     }
     .hero__text{
-        width: 504px;
+        padding-right: 182px;
+        width: 100%;
+        max-width: 736px;
         font-size: 18px;
         line-height: 150%;
     }
@@ -211,6 +219,8 @@ body{
         padding: 86px 40px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
     .main__container::after{
         top: 200px;
@@ -227,7 +237,9 @@ body{
         display: flex;
         justify-content: center;
         align-items: start;
-        width: 356px;
+        width: 100%;
+        min-width: 356px;
+        max-width: 512px;
         height: 828px;
     }
     .illustration__item{
@@ -243,7 +255,9 @@ body{
         display: flex;
         justify-content: center;
         align-items: end;
-        width: 356px;
+        width: 100%;
+        min-width: 356px;
+        max-width: 512px;
         height: 828px;
     }
     .price__container{
@@ -278,4 +292,107 @@ body{
         text-align: center;
     }
     
+}
+@media (min-width: 1440px){
+    body{
+        background-image: url('./assets/bg-main-desktop-fixed.png');
+        background-position: 116% -52%;
+    }
+    .header{
+        padding: 64px 80px;
+        background-position: top -40px right 0px;
+    }
+    .hero{
+        max-width: 1120px;
+    }
+    .hero__title{
+        padding-right: 192px;
+        max-width: 1120px;
+        font-size: 88px;
+        line-height: 88px;
+    }
+    .hero__text{
+        padding-right: 384px;
+        width: 100%;
+        max-width: 1120px;
+        font-size: 20px;
+    }
+    main{
+        background-position: bottom -20% right -20%;
+    }
+    .main__container{
+        position: relative;
+        padding: 79px 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+    }
+    .main__container::after{
+        width: calc(100% - 320px);
+        background-position: left 45% top;
+    }
+    .illustration{
+        margin-right: 32px;
+        height: 842px;
+    }
+    .illustration__item{
+        z-index: 2;
+        width: auto;
+        height: 642px;
+    }
+    .price{
+        position: initial;
+        height: 842px;
+    }
+    .price__container{
+        padding: 56px;
+    }
+    .price__text{
+        font-size: 20px;
+        line-height: 150%;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer__equalizer{
+        flex-direction: row;
+        /* align-items: start; */
+        width: 100%;
+        max-width: 1120px;
+    }
+    .footer__equalizer .logo{
+        margin-bottom: 0;
+        margin-right: 128px;
+    }
+    .footer__equalizer-container{
+        /* display: flex;*/
+        justify-content: space-between; 
+        align-items: center;
+        margin-top: 0;
+        width: 100%;
+    }
+    .footer__equalizer-content{
+        margin: 0;
+    }
+    .footer__equalizer-links{
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        width: fit-content;
+    }
+    .footer__equalizer-links a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        text-decoration: none;
+        color: var(--Slate);
+    }
+    .footer__equalizer-links a:nth-child(2){
+        margin: 0 32px;
+    }
+
 }
