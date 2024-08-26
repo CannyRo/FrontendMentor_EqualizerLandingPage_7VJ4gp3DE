@@ -388,20 +388,5 @@ body{
     .footer__equalizer-links{
         margin-left: auto;
         margin-right: 0;
-        display: flex;
-        width: fit-content;
     }
-    .footer__equalizer-links a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-        text-decoration: none;
-        color: var(--Slate);
-    }
-    .footer__equalizer-links a:nth-child(2){
-        margin: 0 32px;
-    }
-
 }
